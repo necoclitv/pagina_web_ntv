@@ -1,0 +1,321 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos del encabezado */
+
+.img {
+  width: 17%;
+  height: 80%;
+}
+
+header {
+  background-color: #ffffff; 
+  position: fixed;
+  top: 0;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  
+}
+
+.brand {
+  margin-top: -7px;
+}
+
+.brand span {
+  color: #27374D;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: #0c0c0c;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 26px;
+  transition: 1s all;
+}
+
+.menu a:hover {
+  background-color:  #fb3c04;
+  color: white;
+  transform: scale(1.2);
+}
+
+.menu .active {
+  color: #fa840b;
+}
+
+.toggle-menu {
+  display: none;
+}
+
+/* Estilos de la seccion principal*/
+
+main {
+  margin-top: 100px;
+  padding: 6rem;
+}
+.texto {
+    text-align: center;
+    color: #0F0F0F;
+    font-size: 40px;
+    padding: 1em;
+    margin: auto;
+}
+
+#container {
+  text-align: center; 
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: #e97734;
+  color: #ffffff;
+  border-radius: 10px;
+  margin: 5rem;
+  padding: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.489), 4px 0 8px 0 rgba(0, 0, 0, 0.489);
+  flex-direction: column;
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url(../img/tatrjeta\ web.png);
+  background-size: cover;
+  border: 1px solid #cccc;
+}
+
+
+
+.card:hover {
+  background-color: #ffb3ac;
+  opacity: 0.70;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.speed {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.button {
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    color: #121a35;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 1s all;
+    cursor: pointer;
+}
+ .button:hover {
+  background-color:  #fa840b;
+  transform: scale(1.1);
+  color: #f9f9f9;
+ }
+ .button a {
+  text-decoration: none;
+  color: #121a35;
+ }
+
+ .footer-style {
+  padding-top: 80px;
+  background-color: #2C3E50;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  padding: 1px;
+  background-image: url(../img/bg.jpg);
+}
+
+footer h3 {
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+footer .footer-above {
+padding-top: 50px;
+background-color: #2C3E50;
+}
+
+footer .footer-col {
+margin-bottom: 50px;
+font-size: 1.5rem;
+}
+
+footer .footer-below {
+padding: 25px 0;
+background-color: #233140;
+}
+
+.list-inline {
+  margin: 10px;
+  display: flex;
+  font-size: 25px;
+  justify-content: space-evenly;
+  margin-top: 1em;
+}
+
+.list-inline i {
+  color: white;
+}
+
+.banner {
+  margin: 1em;
+  padding: 0;
+  overflow-x: hidden;
+  width: 104%;
+  height: 100%;
+  display: block;
+  left: 80px;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+  .menu {
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #e97734;
+    z-index: 1;
+    transform: translateX(-110%);
+    transition: all 0.5s ease-in-out;
+  }
+  .show-menu {
+    transform: translateX(0%);
+    transition: all 0.5s ease-in-out;
+  }
+ 
+  .menu li {
+    display: block;
+  }
+
+  .fa-bars {
+    font-size: 1.5em;
+    margin-top: -0.2em;
+  }
+  
+  .toggle-menu .fa-close {
+    font-size: 1.7em;
+    display: none;
+  }
+
+  .toggle-menu {
+    display: inline;
+  }
+
+}
+
+.twitter-timelin {
+  width: 15px;
+  height: 10px;
+}
+ 
+ 
+ /* Small Devices, Tablets */
+ @media only screen and (max-width: 768px) {
+  #navbar {
+     padding: 0.5em;
+  }
+  .texto {
+     font-size: 28px;
+  }
+
+  .card {
+    width: 250px;
+    height: 180px;
+    
+ }
+ .img {
+   padding: 1rem;
+   width: 120px;
+   height: 110px;
+ }
+
+ header {
+   position: relative;
+ }
+
+ main {
+   padding: 0;
+ }
+
+ footer {
+  background-size: 200px 300px;
+ }
+ }
+ 
+ /* Extra Small Devices, Phones */
+ @media only screen and (max-width: 576px) {
+  #navbar {
+     padding: 2em;
+  }
+  .texto {
+     font-size: 28px;
+  }
+  .card {
+     width: 250px;
+     height: 180px;
+  }
+  .img {
+    padding: 1rem;
+    width: 120px;
+    height: 110px;
+  }
+
+  header {
+    position: relative;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  footer {
+    background-size: 1px 0.3px;
+  }
+}
+ 
