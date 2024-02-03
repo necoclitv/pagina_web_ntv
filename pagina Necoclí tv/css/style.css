@@ -89,6 +89,76 @@ main {
   text-align: center; 
 }
 
+.banner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: #f00;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  background-image: url("/img/tatrjeta\ web.png");
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.489), 4px 0 8px 0 rgba(0, 0, 0, 0.489);
+}
+
+.banner:hover {
+  background-color: #ffb3ac;
+  opacity: 0.70;
+}
+
+.banner img {
+  width: 200px;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.banner .contenido {
+  flex: 1;
+  
+}
+
+.banner h2 {
+  font-size: 54px;
+  margin-top: 1;
+  margin-bottom: 5px;
+}
+
+.banner p {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.buttonbanner {
+  width: 200px;
+  height: 40px;
+  background-color: white;
+  color: #121a35;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.buttonbanner:hover {
+  background-color: #fa840b;
+  transform: scale(1.1);
+  color: #f9f9f9;
+ }
+
+ .buttonbanner a {
+  text-decoration: none;
+  color: #121a35;
+ }
+
+ .buttonbanner a:hover {
+  color: white;
+ }
+
 .card {
   width: 300px;
   height: 200px;
@@ -115,12 +185,12 @@ main {
 }
 
 .title {
-    font-size: 24px;
+    font-size: 35px;
     font-weight: bold;
 }
 
 .price {
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 10px;
 }
 
@@ -204,12 +274,6 @@ background-color: #233140;
   color: white;
 }
 
-.banner {
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-  transform: translateX(-6.7%);
-}
 
 @media only screen and (max-width: 1200px) {
 
@@ -317,6 +381,35 @@ background-color: #233140;
 
   footer {
     background-size: 1px 0.3px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column; 
+    width: 95%;
+    height: 200px;/* Mantener columna en pantallas pequeñas */
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+  .banner .contenido {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .buttonbanner {
+    width: 100%; /* Botón ocupa todo el ancho en móviles */
+  }
+
+  .banner h2 {
+    font-size: 35px;
+  }
+
+  .banner img {
+    display: none;
   }
 }
  
