@@ -1,175 +1,89 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" sizes="16x16"  href="./img/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <title>Necoclí TV</title>
-</head>
-<body>
-    <!-- Encabezado de la pagina -->
-        <header>
-          <nav id="navbar">
-            <div class="brand">
-                <a href="index.html"><img class="img" src="./img/logo del canal.png"></a>
-            </div>
-            <ul class="menu" id="menu">
-              <li><a href="index.html"class="active">Inicio</a></li>
-              <li><a href="https://cablemio.com/canales-antioquia-nueva/">Televisión</a></li>
-              <li><a href="https://www.speedtest.net/es">Test de Velocidad</a></li>
-              <li><a href="#">Términos y Condiciones</a></li>
-            </ul>
-            <div class="toggle-menu">
-                <i class="fas fa-bars" id="toggle_open"></i>
-                <i class="fas fa-close" id="toggle_close"></i>
-              </div>
-          </nav>
-        </header>
-        <main>
-            
-            <!--tarjetas-->
-        <div id="container">
-            <!--<div class="texto"> 
-                <h1>Planes de internet</h1>
-            </div>-->
-            <h1 class="texto"> Planes de Servicios de internet y televisión</h1>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
-            <h1 class="texto"> Plan Televisión</h1>
-            <h2 class="texto2">Televisión analoga con mas 80 canales y 20 canales en HD</h2>
-            <div class="banner">
-                <img src="./img/logo del canal.png" alt="Imagen del banner">
-                <div class="contenido">
-                  <h2>Televisión</h2>
-                  <p>40.000/mes</p>
-                  <button class="buttonbanner"><a href="https://wa.link/h2z1zl">Quiero este plan</a></button>
-                </div>
-              </div>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.9.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.9.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.9.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.9.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.9.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.9.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.9.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.9.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.9.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.9.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-              <h1 class="texto3">Plan Hogar Especial / Internet + Televisión</h1>
-            <div class="card">
-                <div class="contenido">
-                  <h2 class="title1">20 Mbps + TV</h2>
-                  <p class="price1">80.000/mes</p>
-                  <button class="button"><a href="https://api.whatsapp.com/send?phone=573216084360&text=Me%20interesa%20este%20plan:%20plan%20hogar%20televisi%C3%B3n%20+%20internet%20de%2020%15Mbps%20por%20%2080.000">Quiero este plan</a></button>
-                </div>
-              </div>
-              
-              
-           <!-- <div class="texto">
-                <h1>Plan Hogar Especial / Internet + Televisión</h1>
-            </div>-->
-    
-            <!-- <div class="card">
-                <h2 class="title"> 20 Mbps + Televisión</h2>
-                <p class="price">92.000/mes</p>
-                <button class="button"><a href="https://api.whatsapp.com/send?phone=573216084360&text=Me%20interesa%20este%20plan:%20plan%20hogar%20televisi%C3%B3n%20+%20internet%20de%2020%20Mbps%20por%20%2092.000">Quiero este plan</a></button>
-            </div>-->
-    
-           <!-- <div class="card">
-                <h2 class="title">25 Mbps + Televisión</h2>
-                <p class="price">112.000/mes</p>
-                <button class="button"><a href="https://api.whatsapp.com/send?phone=573216084360&text=Me%20interesa%20este%20plan:%20plan%20hogar%20televisi%C3%B3n%20+%20internet%20de%2025%20Mbps%20por%20%20112.000">Quiero este plan</a></button>
-            </div> -->
-    
-            <!-- <div class="card">
-                <h2 class="title">30 Mbps + Televisión </h2>
-                <p class="price">142.000/mes</p>
-                <button class="button"><a href="https://api.whatsapp.com/send?phone=573216084360&text=Me%20interesa%20este%20plan:%20plan%20hogar%20televisi%C3%B3n%20+%20internet%20de%2030%20Mbps%20por%20%20142.000">Quiero este plan</a></button>
-            </div>-->
-    
-            <div class="texto">
-                <h1>Plan Hogar / Internet</h1>
-            </div>
-    
-            <div class="card">
-                <h2 class="title">20 Mbps</h2>
-                <p class="price">60.000/mes</p>
-                <button class="button"><a href="https://api.whatsapp.com/send?phone=573216084360&text=Me%20interesa%20este%20plan:%20plan%20hogar%20internet%20de%2020%20Mbps%20por%20%2060.000">Quiero este plan</a></button>
-            </div>
-            
-            <div class="card">
-                <h2 class="title">30 Mbps</h2>
-                <p class="price">80.000/mes</p>
-                <button class="button"><a href="https://api.whatsapp.com/send?phone=573216084360&text=Me%20interesa%20este%20plan:%20plan%20hogar%20internet%20de%2030%20Mbps%20por%20%2080.000">Quiero este plan</a></button>
-            </div>
-    
-            <div class="card">
-                <h2 class="title">40 Mbps</h2>
-                <p class="price">100.000/mes</p>
-                <button class="button"><a href="https://api.whatsapp.com/send?phone=573216084360&text=Me%20interesa%20este%20plan:%20plan%20hogar%20internet%20de%2040%20Mbps%20por%20%20110.000">Quiero este plan</a></button>
-            </div>
-    
-            <div class="texto">
-                <h1>Plan Comercial / Internet</h1>
-            </div>
-    
-            <div class="card">
-                <h2 class="title">20 Mbps</h2>
-                <p class="price">70.000/mes</p>
-                <button class="button"><a href="https://api.whatsapp.com/send?phone=573216084360&text=Me%20interesa%20este%20plan:%20plan%20comercial%20internet%20de%2020%20Mbps%20por%2070.000">Quiero este plan</a></button>
-            </div>
-    
-            <div class="card">
-                <h2 class="title">30 Mbps</h2>
-                <p class="price">90.000/mes</p>
-                <button class="button"><a href="https://api.whatsapp.com/send?phone=573216084360&text=Me%20interesa%20este%20plan:%20plan%20comercial%20internet%20de%2030%20Mbps%20por%2090.000">Quiero este plan</a></button>
-            </div>
-    
-            <div class="card">
-                <h2 class="title">40 Mbps</h2>
-                <p class="price">120.000/mes</p>
-                <button class="button"><a href="https://api.whatsapp.com/send?phone=573216084360&text=Me%20interesa%20este%20plan:%20plan%20comercial%20internet%20de%2040%20Mbps%20por%20110.000">Quiero este plan</a></button>
-            </div>
-        </div>
-        </main>
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
 
-        <footer class="text-center footer-style">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 footer-col">
-                        <h3>Contacto</h3>
-                        <p>
-                            Cra 48 # 54 - 02 Barrio Simón Bolívar frente a Cancha la Batea, Necoclí  Antioquia
-                        </p>
-                        <br>
-                        <p>
-                            oficinacablemionecocli@gmail.com
-                        </p>
-                        <br>
-                        <p>
-                            604 8214059 - +57 321 6084360
-                        </p>
-                    </div>
-                    <div class="col-md-4 footer-col">
-                        <h3>Nuestras redes</h3>
-                        <div class="list-inline">
-                            
-                            <a  target="_blank" href="https://www.facebook.com/people/Necoclí-TV/100063481753210/" class="btn-social btn-outline"><i class="fa-brands fa-facebook"></i></a>
-                            
-                             <a  target="_blank" href="https://www.instagram.com/necoclitv/?hl=es" class="btn-social btn-outline"><i class="fa-brands fa-instagram"></i></a>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-                            <a  target="_blank" href="https://twitter.com/necoclitv" class="btn-social btn-outline"><i class="fa-brands fa-x-twitter"></i></a>
-                            
-                            <a  target="_blank" href="https://whatsapp.com/channel/0029VaIEYJFHVvTTFnvzel1o" class="btn-social btn-outline"><i class="fa-brands fa-whatsapp"></i></a>
-                            
-                            <a  target="_blank" href="https://www.youtube.com/@necoclitelevision" class="btn-social btn-outline"><i class="fa-brands fa-youtube"></i></a>
-                            
-                        </div> 
-                    </div>
-                    <br>
-                    <div class="col-md-4 footer-col">
-                        Necoclí Televisión &copy 2024
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script src="https://kit.fontawesome.com/4097e04671.js" crossorigin="anonymous"></script>
-        <script src="./js/main.js"></script>
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
 </html>
